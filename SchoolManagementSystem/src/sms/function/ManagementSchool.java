@@ -9,6 +9,7 @@ public class ManagementSchool {
 		this.list = list;
 	}
 	
+	// print all list school
 	public void display() {
 		if(list.isEmpty())	System.out.println("List school is empty !");
 		else {
@@ -17,6 +18,7 @@ public class ManagementSchool {
 		}
 	}
 	
+	// find by year of student 
 	public void findSchoolByYear(String year) {
 		int check = 0;
 		if(list.isEmpty())	System.out.println("List school is empty !");
@@ -32,6 +34,7 @@ public class ManagementSchool {
 		if(check==0)	System.out.println("There has not found any school in list");
 	}
 	
+	// find by number of studentnt
 	public void findSchoolByNumberOfStudent(int num) {
 		int check = 0;
 		if(list.isEmpty())	System.out.println("List school is empty !");
@@ -46,6 +49,7 @@ public class ManagementSchool {
 		if(check==0)	System.out.println("There has not found any school in list");
 	}
 	
+	// find by school name
 	public void findSchoolByName(String name) {
 		name = name.toUpperCase();
 		System.out.println(name);
@@ -62,6 +66,7 @@ public class ManagementSchool {
 		if(check==0)	System.out.println("There has not found any school in list");
 	}
 	
+	// Brute Search 
 	public boolean isBruteSearch(String p, String a) {
 		int i=0,j=0;
 		do {

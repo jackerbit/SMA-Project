@@ -13,6 +13,7 @@ public class SchoolDAO implements Serializable{
 	
 	public SchoolDAO() {}
 	
+	// load Data
 	public List<SchoolDTO> loadData(String fileName){
 		List<SchoolDTO> list = null;
 		File f = new File(fileName);
